@@ -123,6 +123,14 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Target_board struct {
+			Cflags []string
+		}
+
+		Use_samsung_color struct {
+			Cflags []string
+		}
+
 		Device_support_hwfde struct {
 			Cflags []string
 			Header_libs  []string
@@ -254,6 +262,10 @@ type productVariables struct {
 	Healthd_enable_op_fastchg  *bool `json:",omitempty"`
 
 	Target_init_vendor_lib *bool `json:",omitempty"`
+
+	Target_board *string `json:",omitempty"`
+
+	Use_samsung_color  *bool `json:",omitempty"`
 }
 
 func boolPtr(v bool) *bool {
