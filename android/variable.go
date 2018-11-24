@@ -129,6 +129,7 @@ type variableProperties struct {
 
 		Use_samsung_color struct {
 			Cflags []string
+			Include_dirs []string
 		}
 
 		Device_support_hwfde struct {
